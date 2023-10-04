@@ -227,7 +227,7 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void submitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitButtonActionPerformed
         // TODO add your handling code here:
-//        System.out.println("Hello");
+//        Setting functionalities for First Name
           String firstName = firstNameTextField.getText();
           if (firstName.isEmpty() || !firstName.matches("^[a-zA-Z]+$")) {
                 JOptionPane.showMessageDialog(null, "Enter a first valid name");
