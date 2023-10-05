@@ -232,20 +232,23 @@ public class MainFrame extends javax.swing.JFrame {
           if (firstName.isEmpty() || !firstName.matches("^[a-zA-Z]+$")) {
                 JOptionPane.showMessageDialog(null, "Enter a first valid name");
           }
+//          Setting functionalities for Last Name
           String lastName = lastNameTextField.getText();
           if (lastName.isEmpty() || !firstName.matches("^[a-zA-Z]+$")) {
                 JOptionPane.showMessageDialog(null, "Enter a last valid name");
           }
- 
+//            Setting functionalities for Age
           String age = ageTextField.getText();
           if (!age.matches("\\d*")|| age.isEmpty()) { // Check if the input is a digit
                 JOptionPane.showMessageDialog(null, "Please enter a valid age.");
                 ageTextField.setText("");
           }  
+//          Setting functionalities for Email
           String email = (String)emailTextField.getText();
           if (!email.contains("@") || !email.endsWith(".com")) { 
                 JOptionPane.showMessageDialog(null, "Enter a valid email address");  
           }  
+//          Setting functionalities for Message
            String message = messageTextField.getText();
           if (message.isEmpty()){
               JOptionPane.showMessageDialog(null, "Please enter a message");
