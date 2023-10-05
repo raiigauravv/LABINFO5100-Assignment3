@@ -275,7 +275,7 @@ public class MainFrame extends javax.swing.JFrame {
     private void uploadButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_uploadButtonActionPerformed
         // TODO add your handling code here:
         JFileChooser browseImageFile = new JFileChooser();
-        //For accepting only image extensions
+        //Setting Functionality for image extensions only
         FileNameExtensionFilter fnef = new FileNameExtensionFilter("IMAGES", "png", "jpg", "jpeg");
         browseImageFile.addChoosableFileFilter(fnef);
         int showOpenDialog = browseImageFile.showOpenDialog(null);
